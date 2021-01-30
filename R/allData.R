@@ -75,7 +75,8 @@ NA
 #' @examples
 #' data(enterotype)
 #' ig <- phyloseq::make_network(enterotype, "samples", max.dist=0.3)
-#' phyloseq::plot_network(ig, enterotype, color="SeqTech", shape="Enterotype", line_weight=0.3, label=NULL)
+#' phyloseq::plot_network(ig, enterotype, color="SeqTech", shape="Enterotype", line_weight=0.3,
+#' label=NULL)
 ################################################################################
 NA
 ################################################################################
@@ -153,7 +154,8 @@ NA
 #' ################################################################################
 #' # Graphically compare richness between the different treatments.
 #' man.col <- c(WC="red", WU="brown", UC="blue", UU="darkgreen")
-#' phyloseq::plot_richness(soilrep, x="Treatment", color="Treatment", measures=c("Observed", "Chao1", "Shannon"))
+#' phyloseq::plot_richness(soilrep, x="Treatment", color="Treatment",
+#' measures=c("Observed", "Chao1", "Shannon"))
 ################################################################################
 NA
 ################################################################################

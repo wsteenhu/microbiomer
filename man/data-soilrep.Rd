@@ -68,7 +68,8 @@ data(soilrep)
 ################################################################################
 # Graphically compare richness between the different treatments.
 man.col <- c(WC="red", WU="brown", UC="blue", UU="darkgreen")
-phyloseq::plot_richness(soilrep, x="Treatment", color="Treatment", measures=c("Observed", "Chao1", "Shannon"))
+phyloseq::plot_richness(soilrep, x="Treatment", color="Treatment",
+measures=c("Observed", "Chao1", "Shannon"))
 }
 \references{
 Zhou, J., Wu, L., Deng, Y., Zhi, X., Jiang, Y.-H., Tu, Q., Xie, J., et al.

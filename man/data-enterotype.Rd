@@ -27,7 +27,8 @@ Our knowledge of species and functional composition of the human gut microbiome 
 \examples{
 data(enterotype)
 ig <- phyloseq::make_network(enterotype, "samples", max.dist=0.3)
-phyloseq::plot_network(ig, enterotype, color="SeqTech", shape="Enterotype", line_weight=0.3, label=NULL)
+phyloseq::plot_network(ig, enterotype, color="SeqTech", shape="Enterotype", line_weight=0.3,
+label=NULL)
 }
 \references{
 Arumugam, M., et al. (2011). Enterotypes of the human gut microbiome.

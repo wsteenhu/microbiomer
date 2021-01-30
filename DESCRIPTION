@@ -1,5 +1,5 @@
 Package: microbiomer
-Title: What the Package Does (One Line, Title Case)
+Title: Package Containing Utility-functions to Work with Microbiota-data
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -19,4 +19,5 @@ Imports:
     phyloseq,
     dplyr,
     magrittr,
-    glue
+    glue,
+    tibble
