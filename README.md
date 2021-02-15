@@ -10,7 +10,7 @@
 The goal of `microbiomer` is to provide a small set of tools to more
 seamlessly integrate tools/functions from both the
 [`phyloseq`](https://joey711.github.io/phyloseq/) and
-[`tidyverse`](https://www.tidyverse.org)ph-packages.
+[`tidyverse`](https://www.tidyverse.org)-packages.
 
 **Note this is a package in development; although the functions were not
 yet tested extensively within the context of this package, they were
@@ -159,4 +159,4 @@ ps_NP %>%
 
 Note this plotting function can be used in conjunction with other
 ggplot2-functions/extensions, such as
-coord\_flip()/ggforce::facet\_col() and facet\_wrap().
+`coord_flip()`/`ggforce::facet_col()` and `facet_wrap()`.
