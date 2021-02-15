@@ -7,9 +7,10 @@
 
 <!-- badges: end -->
 
-The goal of `microbiomer` is to provide tools to more seamlessly
-integrate tools/functions from both the `phyloseq` and
-`tidyverse`-packages.
+The goal of `microbiomer` is to provide a small set of tools to more
+seamlessly integrate tools/functions from both the
+[`phyloseq`](https://joey711.github.io/phyloseq/) and
+[`tidyverse`](https://www.tidyverse.org)ph-packages.
 
 **Note this is a package in development; although the functions were not
 yet tested extensively within the context of this package, they were
@@ -67,9 +68,10 @@ The package includes nasopharyngeal microbiota data collected at 1 week,
 ### Convert
 
 ``` r
-otu_table(ps_NP) %>%
-  to_RA() %>%
-  .[1:5,1:3]
+ps_NP_RA <- otu_table(ps_NP) %>%
+  to_RA() 
+
+ps_NP_RA[1:5,1:3] # depict example
 #> OTU Table:          [5 taxa and 3 samples]
 #>                      taxa are rows
 #>                         121142010012 121144010012 121150010012
@@ -83,6 +85,25 @@ otu_table(ps_NP) %>%
 `to_RA` converts the otu\_table()-object nested within a
 phyloseq-objected into a total-sum-scaled table (relative abundances
 instead of raw reads).
+
+### Filter
+
+``` r
+ps_NP %>% ntaxa()
+#> [1] 1793
+
+ps_NP %>%
+  pres_abund_filter()
+#> A total of 224 ASVs were found to be present at or above a level of confident detection (0.1% relative abundance) in at least 2 samples (n = 1569 ASVs excluded).
+#> phyloseq-class experiment-level object
+#> otu_table()   OTU Table:         [ 224 taxa and 287 samples ]
+#> sample_data() Sample Data:       [ 287 samples by 5 sample variables ]
+#> tax_table()   Taxonomy Table:    [ 224 taxa by 8 taxonomic ranks ]
+```
+
+Use a filter described by
+[Subramanian](https://www.nature.com/articles/nature13421) *et al*.
+(Nature, 2014) to filter phyloseq-objects.
 
 ### Extract metadata
 
