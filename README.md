@@ -82,9 +82,9 @@ ps_NP_RA[1:5,1:3] # depict example
 #> Haemophilus_9           0.0000000000 0.0004256728 0.0000000000
 ```
 
-`to_RA` converts the otu\_table()-object nested within a
-phyloseq-objected into a total-sum-scaled table (relative abundances
-instead of raw reads).
+`to_RA` converts the otu\_table-object nested within a phyloseq-object
+into a total-sum-scaled table (relative abundances instead of raw
+reads).
 
 ### Filter
 

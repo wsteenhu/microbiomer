@@ -63,7 +63,7 @@ ps_NP_RA <- otu_table(ps_NP) %>%
 ps_NP_RA[1:5,1:3] # depict example
 ```
 
-`to_RA` converts the otu_table()-object nested within a phyloseq-objected into a total-sum-scaled table (relative abundances instead of raw reads).
+`to_RA` converts the otu_table-object nested within a phyloseq-object into a total-sum-scaled table (relative abundances instead of raw reads).
 
 ### Filter
 
