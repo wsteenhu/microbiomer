@@ -18,8 +18,8 @@ A dataframe with OTU-data and metadata contained in phyloseq.
 Combine phyloseq OTU-table (otu_table) and metadata (sample_data) into one dataframe.
 }
 \examples{
-data(enterotype)
-ps_to_df(enterotype)
+data(ps_NP)
+ps_to_df(ps_NP)
 }
 \seealso{
 \code{\link{meta_to_df}} \code{\link{otu_tab_to_df}}

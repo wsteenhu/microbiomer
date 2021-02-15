@@ -7,8 +7,8 @@
 #' @export
 #'
 #' @examples
-#' data(enterotype)
-#' meta_to_df(enterotype)
+#' data(ps_NP)
+#' meta_to_df(ps_NP)
 meta_to_df <- function(ps, sample_name = "sample_id") {
   meta <- phyloseq::sample_data(ps)
   df <- meta %>%

@@ -10,8 +10,8 @@
 #' \code{\link{meta_to_df}} \code{\link{otu_tab_to_df}}
 #'
 #' @examples
-#' data(enterotype)
-#' ps_to_df(enterotype)
+#' data(ps_NP)
+#' ps_to_df(ps_NP)
 ps_to_df <- function(ps, sample_name = "sample_id") {
   df_meta <- meta_to_df(ps, sample_name)
   df_otu <- otu_tab_to_df(ps, sample_name)

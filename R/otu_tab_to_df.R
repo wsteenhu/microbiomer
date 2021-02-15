@@ -10,8 +10,8 @@
 #' \code{\link{meta_to_df}}
 #'
 #' @examples
-#' data(enterotype)
-#' otu_tab_to_df(enterotype)
+#' data(ps_NP)
+#' otu_tab_to_df(ps_NP)
 otu_tab_to_df <- function(ps, sample_name = "sample_id") {
   otu_tab <- phyloseq::otu_table(ps)
   df <- otu_tab %>%

@@ -2,11 +2,11 @@ Package: microbiomer
 Title: Package Containing Utility-functions to Work with Microbiota-data
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Wouter",
+           family = "de Steenhuijsen Piters",
            role = c("aut", "cre"),
            email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0002-1144-4067"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -20,4 +20,15 @@ Imports:
     dplyr,
     magrittr,
     glue,
-    tibble
+    tibble,
+    rlang,
+    purrr,
+    stringr,
+    tidyr,
+    forcats,
+    ggplot2,
+    ggtext,
+    scales,
+    RColorBrewer
+Depends: 
+    R (>= 2.10)

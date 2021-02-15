@@ -18,6 +18,6 @@ A dataframe with metadata contained in phyloseq.
 Convert phyloseq metadata (sample_data) to dataframe.
 }
 \examples{
-data(enterotype)
-meta_to_df(enterotype)
+data(ps_NP)
+meta_to_df(ps_NP)
 }

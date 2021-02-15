@@ -18,8 +18,8 @@ A dataframe with OTU-data contained in phyloseq.
 Convert phyloseq OTU-table (otu_table) to dataframe.
 }
 \examples{
-data(enterotype)
-otu_tab_to_df(enterotype)
+data(ps_NP)
+otu_tab_to_df(ps_NP)
 }
 \seealso{
 \code{\link{meta_to_df}}

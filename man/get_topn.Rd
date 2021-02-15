@@ -11,7 +11,7 @@ get_topn(ps, n = 15, residuals = TRUE)
 
 \item{n}{number of OTUs to extract; ranking based on mean (relative) abundance.}
 
-\item{residuals}{include residuals (logical).}
+\item{residuals}{include residuals (logical). Default: TRUE}
 }
 \value{
 Returns a phyloseq-object only containing the top \emph{n} OTUs.
@@ -21,6 +21,6 @@ This function is mainly used in the context of plotting functions.
 Extract the top \emph{n} OTUs from a phyloseq-object
 }
 \examples{
-data(enterotype)
-get_topn(enterotype)
+data(ps_NP)
+get_topn(ps_NP)
 }

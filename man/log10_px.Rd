@@ -18,6 +18,6 @@ converted phyloseq-object
 log10 pseudocount conversion
 }
 \examples{
-data(enterotype)
-log10_px(enterotype, 0.00001)
+data(ps_NP)
+log10_px(ps_NP, 0.00001)
 }

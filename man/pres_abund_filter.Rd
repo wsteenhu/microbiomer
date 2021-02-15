@@ -4,26 +4,31 @@
 \alias{pres_abund_filter}
 \title{Filter phyloseq-object based on presence/absence}
 \usage{
-pres_abund_filter(ps, pres = 2, abund = 0.001, verbose = T)
+pres_abund_filter(ps, pres = 2, abund = 0.001, verbose = TRUE)
 }
 \arguments{
-\item{ps}{phyloseq-object}
+\item{ps}{phyloseq-object (can be contain raw reads/relative abundance)}
 
-\item{pres}{number of samples in which given ASV should at least be present to be included}
+\item{pres}{number of samples in which given OTU/ASV should at least be present to be included}
 
-\item{abund}{abundance which given ASV should at least be present}
+\item{abund}{abundance which given OTU/ASV should at least be present}
 
 \item{verbose}{(logical) print information on number of ASVs included/excluded}
 }
 \value{
-A filtered phyloseq-object
+A filtered phyloseq-object.
 }
 \description{
-Filter phyloseq-object based on presence/absence
+By default, this function implements a filter used by Subramanian \emph{et al}., \emph{Nature}, 2014.
+It selects those OTUs/ASVs present at or above a level of confident detection (0.1\% relative abundance) in at
+least 2 samples.
+This filter, especially using DADA2 data, results in a strong reduction of taxa, yet the total number of
+reads should not drop too much. Always be considerate when using these filters, e.g. when running alpha-diversity
+measures it might not be appropriate to use.
 }
 \examples{
-data(esophagus)
-phyloseq::ntaxa(esophagus)
-esophagus_filtered <- esophagus \%>\% pres_abund_filter()
-phyloseq::ntaxa(esophagus_filtered)
+data(ps_NP)
+phyloseq::ntaxa(ps_NP)
+ps_NP_filt <- ps_NP \%>\% pres_abund_filter()
+phyloseq::ntaxa(ps_NP_filt)
 }

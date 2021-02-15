@@ -7,8 +7,10 @@
 #' @export
 #'
 #' @examples
-#' data(enterotype)
-#' log10_px(enterotype, 0.00001)
+#' data(ps_NP)
+#' log10_px(ps_NP, 0.00001)
 log10_px <- function(ps, pseudocount = 1) {
-  ps %>% phyloseq::transform_sample_counts(., function(x) log10(x + pseudocount))
+
+  phyloseq::transform_sample_counts(ps, function(x) log10(x + pseudocount))
+
 }

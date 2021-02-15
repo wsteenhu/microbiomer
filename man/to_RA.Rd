@@ -7,7 +7,7 @@
 to_RA(ps)
 }
 \arguments{
-\item{ps}{phyloseq-object.}
+\item{ps}{phyloseq-object}
 }
 \value{
 Returns an phyloseq-object containing relative abundances instead of raw read counts (uses total sum scaling).
@@ -16,6 +16,6 @@ Returns an phyloseq-object containing relative abundances instead of raw read co
 Convert phyloseq with raw read counts to relative abundance
 }
 \examples{
-data(enterotype)
-to_RA(enterotype)
+data(ps_NP)
+to_RA(ps_NP)
 }
