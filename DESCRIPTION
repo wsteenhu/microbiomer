@@ -7,8 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = c(ORCID = "0000-0002-1144-4067"))
-Description: The goal of `microbiomer` is to provide a small set of tools to more 
-seamlessly integrate tools/functions from both the `phyloseq` and `tidyverse`-packages.
+Description: The goal of `microbiomer` is to provide a small set of tools to more seamlessly integrate tools/functions from both the `phyloseq` and `tidyverse`-packages.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
